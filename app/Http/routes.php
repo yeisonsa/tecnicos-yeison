@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::resource('/news', 'AdminController');
+
+Route::get('{id}', function($id){
+	return 'Esta Url no existe...';
+});
